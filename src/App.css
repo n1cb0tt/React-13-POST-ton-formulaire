@@ -1,38 +1,41 @@
 .App {
   text-align: center;
+  font-family: "Ubuntu Mono";
+  color: #555588;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+fieldset {
+  box-shadow: 0px 0px 10px #555588;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.FormMovie {
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.FormMovie h1 {
+  text-align: center;
+}
+
+.FormMovie .form-data {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 5px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.FormMovie .form-data label {
+  display: inline-block;
+  width: 175px;
+  margin-right: 10px;
+  text-align: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.FormMovie .form-data input:not([type="submit"]) {
+  flex-grow: 1;
+}
+
+.FormMovie .form-data textarea {
+  flex-grow: 1;
 }
